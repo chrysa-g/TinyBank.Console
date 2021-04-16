@@ -1,4 +1,4 @@
-﻿<div class="alert alert-success alert-dismissible" style="display:none">
+<div class="alert alert-success alert-dismissible" style="display:none">
     <h4 class="alert-heading">Successful payment!</h4>
     @*<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>*@
     <span id="success-message"></span>
@@ -7,38 +7,39 @@
     <div class="text-center">
         <h1 class="display-4">Checkout form</h1>
     </div>
+    <div class="alert alert-danger alert-dismissible" style="display:none">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <span id="error-message"></span>
+    </div>
     <div class="d-flex justify-content-center">
         <div class="spinner-grow" role="status" style="display:none">
             <span class="sr-only">Loading...</span>
         </div>
-        </div>
-        <div class="alert alert-danger alert-dismissible" style="display:none">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            <span id="error-message"></span>
-        </div>
-        <div class="payment-form">
-            <form>
-                <div class="form-group">
-                    <label>Card Number</label>
-                    <input class="form-control js-card-number">
-                </div>
+    </div>
 
-                <div class="form-group">
-                    <label>Card Expiration Date</label>
-                    <input class="form-control js-exp-month" placeholder="mm" maxlength="2">
-                    <input class="form-control js-exp-year" placeholder="YYYY" maxlength="4">
-                </div>
-
-                <div class="form-group">
-                    <label>Amount</label>
-                    <input class="form-control js-amount" value="">
-                </div>
-
-            </form>
-            <div class="text-center">
-                <button type="button" class="btn btn-primary js-pay">
-                    Pay!
-                </button>
+    <div class="payment-form">
+        <form>
+            <div class="form-group">
+                <label>Card Number</label>
+                <input class="form-control js-card-number">
             </div>
+
+            <div class="form-group">
+                <label>Card Expiration Date</label>
+                <input class="form-control js-exp-month" placeholder="mm" maxlength="2">
+                <input class="form-control js-exp-year" placeholder="YYYY" maxlength="4">
+            </div>
+
+            <div class="form-group">
+                <label>Amount</label>
+                <input class="form-control js-amount" value="">
+            </div>
+
+        </form>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary js-pay">
+                Pay!
+            </button>
         </div>
     </div>
+</div>
